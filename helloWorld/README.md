@@ -10,10 +10,10 @@ This setup should be the same for all of the exercises.  The plain javascript fi
 
 Let's look at the spec file first:
 ```javascript
-var helloWorld = require('./helloWorld');
+const helloWorld = require('./helloWorld');
 
 describe('Hello World', function() {
-    it('says hello world', function() {
+  it('says hello world', function() {
     expect(helloWorld()).toEqual('Hello, World!');
   });
 });
@@ -26,7 +26,7 @@ For now you do not need to worry about how to write tests, but you should try to
 
 so let's look at the javascript file:
 ```javascript
-var helloWorld = function() {
+const helloWorld = function() {
   return ''
 }
 
@@ -40,7 +40,7 @@ Just to make sure, in case you're confused at this point, the test is telling yo
 
 this is what the final function should look like:
 ```javascript
-var helloWorld = function() {
+const helloWorld = function() {
   return 'Hello, World!'
 }
 
